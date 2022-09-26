@@ -106,6 +106,10 @@ The stack allocated for a given method call is freed when the method returns.
 ## Where is a "std::string" allocated on stack or heap?
 * The string object itself is stored on the stack but it points to memory that is on the heap.
 
+## What is dynamic memory allocation in c++
+* Dynamic memory allocation in c/c++ refers to performing memory allocation manually by a programmer.
+* Functions in the C standard library, namely malloc, realloc, calloc and free.
+
 ## References
 * [Track MEMORY ALLOCATIONS the Easy Way in C++](https://www.youtube.com/watch?v=sLlGEUO_EGE&t=381s)
 * [delete keyword in C++](https://www.geeksforgeeks.org/delete-in-c/)
@@ -113,3 +117,4 @@ The stack allocated for a given method call is freed when the method returns.
 * [Stack vs Heap Memory Allocation](https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/)
 * [Stack and Heap Memory](https://courses.engr.illinois.edu/cs225/sp2020/resources/stack-heap/)
 * [std::unique_ptr](https://en.cppreference.com/w/cpp/memory/unique_ptr)
+* [C dynamic memory allocation](https://en.wikipedia.org/wiki/C_dynamic_memory_allocation)
