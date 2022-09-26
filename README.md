@@ -63,7 +63,42 @@ int main()
 * A void * can be converted to any other pointer type without an explicit cast.
 * void vs void*, They're not really the same thing, but pointers can be converted to void *.
 
+## Heap vs Stack
+### Layout
+* Stack - stores local variables
+* Heap - dynamic memory for programmer to allocate
+### Stack
+* Allocation happens in the function call stack.
+* It’s a temporary memory allocation.
+* Whenever the function call is over, the memory for the variables is de-allocated.
+* Memory allocation and de-allocation is faster as compared to Heap-memory allocation.
+* Stack-memory has less storage space as compared to Heap-memory.
+
+```c++
+int main()
+{
+   // All these variables get memory
+   // allocated on stack
+   int a;
+   int b[10];
+   int n = 20;
+   int c[n];
+}
+```
+
+### Is the stack automatically deallocation garbage collection?
+The allocation and deallocation for stack memory is automatically done. 
+The stack is not garbage collected.
+The stack allocated for a given method call is freed when the method returns.
+
+### Heap
+* The memory is allocated during the execution of instructions written by programmers.
+* To allocate heap memory in C++, use the keyword "new".
+* To free heap memory, use the key word "delete".
+
 ## References
 * [Track MEMORY ALLOCATIONS the Easy Way in C++](https://www.youtube.com/watch?v=sLlGEUO_EGE&t=381s)
 * [delete keyword in C++](https://www.geeksforgeeks.org/delete-in-c/)
 * [Overloading New and Delete operator in c++](https://www.geeksforgeeks.org/overloading-new-delete-operator-c/)
+* [Stack vs Heap Memory Allocation](https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/)
+* [Stack and Heap Memory](https://courses.engr.illinois.edu/cs225/sp2020/resources/stack-heap/)
