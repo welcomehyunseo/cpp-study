@@ -96,9 +96,20 @@ The stack allocated for a given method call is freed when the method returns.
 * To allocate heap memory in C++, use the keyword "new".
 * To free heap memory, use the key word "delete".
 
+## What is unique_ptr
+* In C++ std::unique_ptr (pronounced “unique pointer”) is one of the “smart pointer” classes available in the Standard Library.
+* std::unique_ptr is a smart pointer that owns and manages another object through a pointer and disposes of that object when the unique_ptr goes out of scope.
+
+## What is the use of operator keyword?
+* This gives the operator more than one meaning, or "overloads" it. (like redefined new operator)
+
+## Where is a "std::string" allocated on stack or heap?
+* The string object itself is stored on the stack but it points to memory that is on the heap.
+
 ## References
 * [Track MEMORY ALLOCATIONS the Easy Way in C++](https://www.youtube.com/watch?v=sLlGEUO_EGE&t=381s)
 * [delete keyword in C++](https://www.geeksforgeeks.org/delete-in-c/)
 * [Overloading New and Delete operator in c++](https://www.geeksforgeeks.org/overloading-new-delete-operator-c/)
 * [Stack vs Heap Memory Allocation](https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/)
 * [Stack and Heap Memory](https://courses.engr.illinois.edu/cs225/sp2020/resources/stack-heap/)
+* [std::unique_ptr](https://en.cppreference.com/w/cpp/memory/unique_ptr)
