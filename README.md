@@ -1,4 +1,6 @@
-CPP Study
+# Member Initializer Lists
 
-Track Memory [site](https://github.com/welcomehyunseo/cpp-study/tree/track-memory) 
-* Track MEMORY ALLOCATIONS the Easy Way in C++ [site](https://www.youtube.com/watch?v=sLlGEUO_EGE&t=381)
+Member initializer list specifies the initializers for direct.
+
+## References
+* [Constructors and member initializer lists](https://en.cppreference.com/w/cpp/language/constructor)
